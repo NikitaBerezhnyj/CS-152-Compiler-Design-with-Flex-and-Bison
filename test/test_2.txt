@@ -1,0 +1,25 @@
+func factorial(n)
+{
+    var res;
+    if n == 1
+    {
+        res = 1;
+        return res;
+    }
+    else
+    {
+        var tmp;
+        tmp = n - 1;
+        res = factorial(tmp);
+        res = n * res;
+        return res;
+    }
+}
+
+func main()
+{
+    var result; 
+    var n = input();
+    result = factorial(n);
+    print(result);
+}
